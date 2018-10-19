@@ -40,14 +40,7 @@ import java.util.List;
 
 import static com.haulmont.intellij.cubaevents.EventsDeclarations.*;
 
-/**
- * <p>
- * 1.fix package name for EventBus
- * <p>
- * 2. try use `GlobalSearchScope.projectScope(project)` to just search for project, but get NullPointerException,
- * the old use `GlobalSearchScope.allScope(project)` , it will search in project and libs,so slow
- */
-public class CubaEventsLineMarkerProvider implements LineMarkerProvider {
+public class SpringEventsLineMarkerProvider implements LineMarkerProvider {
 
     public static final Icon EVENT_ICON = IconLoader.getIcon("/icons/event-icon.png");
     public static final Icon SENDER_ICON = IconLoader.getIcon("/icons/sender-icon.png");
@@ -150,15 +143,15 @@ public class CubaEventsLineMarkerProvider implements LineMarkerProvider {
     public LineMarkerInfo getLineMarkerInfo(@NotNull PsiElement psiElement) {
         if (PsiUtils.isEventsPublish(psiElement)) {
             return new LineMarkerInfo<>(psiElement, psiElement.getTextRange(), SENDER_ICON,
-                    Pass.UPDATE_ALL, null, CubaEventsLineMarkerProvider::showEventReceivers,
+                    Pass.UPDATE_ALL, null, SpringEventsLineMarkerProvider::showEventReceivers,
                     GutterIconRenderer.Alignment.LEFT);
         } else if (PsiUtils.isEventsReceiver(psiElement)) {
             return new LineMarkerInfo<>(psiElement, psiElement.getTextRange(), RECEIVER_ICON,
-                    Pass.UPDATE_ALL, null, CubaEventsLineMarkerProvider::showEventSenders,
+                    Pass.UPDATE_ALL, null, SpringEventsLineMarkerProvider::showEventSenders,
                     GutterIconRenderer.Alignment.LEFT);
         } else if (PsiUtils.isEventClass(psiElement)) {
             return new LineMarkerInfo<>(psiElement, psiElement.getTextRange(), EVENT_ICON,
-                    Pass.UPDATE_ALL, null, CubaEventsLineMarkerProvider::showEventUsages,
+                    Pass.UPDATE_ALL, null, SpringEventsLineMarkerProvider::showEventUsages,
                     GutterIconRenderer.Alignment.LEFT);
         }
         return null;

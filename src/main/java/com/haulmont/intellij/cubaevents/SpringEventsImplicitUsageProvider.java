@@ -19,7 +19,7 @@ package com.haulmont.intellij.cubaevents;
 import com.intellij.codeInsight.daemon.ImplicitUsageProvider;
 import com.intellij.psi.PsiElement;
 
-public class CubaEventsImplicitUsageProvider implements ImplicitUsageProvider {
+public class SpringEventsImplicitUsageProvider implements ImplicitUsageProvider {
     @Override
     public boolean isImplicitUsage(PsiElement psiElement) {
         return PsiUtils.isEventsReceiverMethod(psiElement);

@@ -22,8 +22,8 @@ public final class EventsDeclarations {
     public static final String APPLICATION_EVENT_CLASSNAME = "org.springframework.context.ApplicationEvent";
     public static final String ON_APPLICATION_EVENT_METHODNAME = "onApplicationEvent";
 
-    public static final String EVENTS_CLASSNAME = "com.haulmont.cuba.core.global.Events";
-    public static final String EVENTS_PUBLISH_METHODNAME = "publish";
+    public static final String EVENTS_CLASSNAME = "org.springframework.context.ApplicationEventPublisher";
+    public static final String EVENTS_PUBLISH_METHODNAME = "publishEvent";
 
     private EventsDeclarations() {
     }

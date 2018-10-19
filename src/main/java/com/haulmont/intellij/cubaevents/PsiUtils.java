@@ -127,7 +127,7 @@ public class PsiUtils {
                     && psiClass.getQualifiedName().endsWith("Event")) {
 
                 for (PsiClass superClass : psiClass.getSupers()) {
-                    if (Objects.equals(superClass.getName(), APPLICATION_EVENT_CLASSNAME)) {
+                    if (Objects.equals(superClass.getQualifiedName(), APPLICATION_EVENT_CLASSNAME)) {
                         return true;
                     }
                 }

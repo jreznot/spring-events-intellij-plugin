@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>com.haulmont.intellij.cubaevents</id>
-    <name>CUBA Platform Events Navigator</name>
+    <name>Spring Events Navigator</name>
     <version>0.1.0</version>
     <vendor email="info@cuba-platform.com" url="https://cuba-platform.com">CUBA Platform</vendor>
 
     <description><![CDATA[
-      Advanced navigation for Events subsystem of CUBA Platform
+      Advanced navigation for Spring Events
     ]]></description>
 
     <change-notes><![CDATA[
@@ -19,10 +19,10 @@
         <!-- Add your extensions here -->
         <codeInsight.lineMarkerProvider
                 language="JAVA"
-                implementationClass="com.haulmont.intellij.cubaevents.CubaEventsLineMarkerProvider"/>
+                implementationClass="com.haulmont.intellij.cubaevents.SpringEventsLineMarkerProvider"/>
 
         <implicitUsageProvider
-                implementation="com.haulmont.intellij.cubaevents.CubaEventsImplicitUsageProvider"/>
+                implementation="com.haulmont.intellij.cubaevents.SpringEventsImplicitUsageProvider"/>
     </extensions>
 
     <application-components>

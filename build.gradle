@@ -1,0 +1,7 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.3.12"
+}
+
+intellij {
+    version 'IC-2018.2'
+}

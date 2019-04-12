@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cuba-events-intellij-plugin.iml" filepath="$PROJECT_DIR$/cuba-events-intellij-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-events-intellij-plugin.test.iml" />
     </modules>
   </component>
 </project>

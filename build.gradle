@@ -1,7 +1,7 @@
 plugins {
-    id "org.jetbrains.intellij" version "0.3.12"
+    id "org.jetbrains.intellij" version "0.4.7"
 }
 
 intellij {
-    version 'IC-2018.2'
+    version 'IC-2019.1'
 }

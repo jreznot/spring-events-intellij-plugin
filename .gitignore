@@ -2,3 +2,5 @@
 .idea/sbt.xml
 .idea/dictionaries
 out/
+build/
+.gradle/

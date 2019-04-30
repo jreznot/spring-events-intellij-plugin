@@ -1,11 +1,11 @@
 <idea-plugin>
-    <id>com.haulmont.intellij.cubaevents</id>
+    <id>org.strangeway.springevents</id>
     <name>Spring Events Navigator</name>
     <version>0.1.0</version>
-    <vendor email="info@cuba-platform.com" url="https://cuba-platform.com">CUBA Platform</vendor>
+    <vendor email="info@strangeway.org" url="https://strangeway.org">StrangeWay Org</vendor>
 
     <description><![CDATA[
-      Advanced navigation for Spring Events
+      Advanced navigation for Spring Events: gutter icons and usage finder
     ]]></description>
 
     <change-notes><![CDATA[
@@ -13,7 +13,7 @@
     ]]>
     </change-notes>
 
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="191.0"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -24,15 +24,6 @@
         <implicitUsageProvider
                 implementation="com.haulmont.intellij.cubaevents.SpringEventsImplicitUsageProvider"/>
     </extensions>
-
-    <application-components>
-    </application-components>
-
-    <project-components>
-    </project-components>
-
-    <actions>
-    </actions>
 
     <depends>com.intellij.modules.java</depends>
 
